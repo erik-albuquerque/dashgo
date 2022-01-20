@@ -3,14 +3,14 @@ import {
   Button,
   Divider,
   Flex,
-  Heading,
   HStack,
   SimpleGrid,
   VStack,
 } from "@chakra-ui/react";
-import { Input } from "../../components/form/Input";
+import { Input } from "../../components/Form/Input";
 
 import { Header } from "../../components/Header";
+import { Headings } from "../../components/Heading";
 import { SideBar } from "../../components/SideBar";
 
 export default function CreateUser() {
@@ -22,9 +22,7 @@ export default function CreateUser() {
         <SideBar />
 
         <Box flex="1" borderRadius={8} bg="gray.800" p="8">
-          <Heading size="lg" fontWeight="normal">
-            Criar usuário
-          </Heading>
+          <Headings>Criar usuário</Headings>
 
           <Divider my="6" borderColor="gray.700" />
 
