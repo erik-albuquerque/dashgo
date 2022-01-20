@@ -61,7 +61,7 @@ const series = [{ name: "series1", data: [31, 120, 10, 28, 61, 18, 109] }];
 
 export function Charts({ children }: ChartsProps) {
   return (
-    <Box p="8" bg="gray.800" borderRadius={8} pb="4">
+    <Box p={["6", "8"]} bg="gray.800" borderRadius={8} pb="4">
       <Text fontSize="lg" mb="4">
         {children}
       </Text>
