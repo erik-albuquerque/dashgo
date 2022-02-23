@@ -65,7 +65,12 @@ export default function UserList() {
 
         <Box flex="1" borderRadius={8} bg="gray.800" p="8">
           <Flex mb="8" justify="space-between" align="center">
-            <Heading>Usuários</Heading>
+            <Heading>
+              Usuários
+              {!isLoading && isFetching && (
+                <Spinner size="sm" color="gray.500" ml="4" />
+              )}
+            </Heading>
 
             <Link href="/users/create" passHref>
               <Button
