@@ -7,7 +7,7 @@ interface HeadingProps extends ChakraHeadingProps {
   children: string;
 }
 
-export function Headings({ children, ...rest }: HeadingProps) {
+export function Heading({ children, ...rest }: HeadingProps) {
   return (
     <H2 size="lg" fontWeight="normal" {...rest}>
       {children}

@@ -20,7 +20,7 @@ import { useQuery } from "react-query";
 import { RiAddLine, RiPencilLine } from "react-icons/ri";
 
 import { Header } from "../../components/Header";
-import { Headings } from "../../components/Heading";
+import { Heading } from "../../components/Heading";
 import { Pagination } from "../../components/Pagination";
 import { SideBar } from "../../components/SideBar";
 
@@ -32,7 +32,7 @@ type User = {
 };
 
 export default function UserList() {
-  const { data, isLoading, error } = useQuery("users", async () => {
+  const { data, isLoading, isFetching, error } = useQuery("users", async () => {
     const response = await fetch("http://localhost:3001/api/users");
     const data = await response.json();
 
@@ -65,7 +65,7 @@ export default function UserList() {
 
         <Box flex="1" borderRadius={8} bg="gray.800" p="8">
           <Flex mb="8" justify="space-between" align="center">
-            <Headings>Usuários</Headings>
+            <Heading>Usuários</Heading>
 
             <Link href="/users/create" passHref>
               <Button
