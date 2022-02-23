@@ -14,8 +14,6 @@ import {
   Tr,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import { useQuery } from "react-query";
-import { api } from "../../services/api";
 
 import { RiAddLine, RiPencilLine } from "react-icons/ri";
 
@@ -24,6 +22,7 @@ import { Heading } from "../../components/Heading";
 import { Pagination } from "../../components/Pagination";
 import { SideBar } from "../../components/SideBar";
 import Link from "next/link";
+import { useUsers } from "../../services/hooks/useUsers";
 
 type User = {
   id: string;
@@ -33,23 +32,7 @@ type User = {
 };
 
 export default function UserList() {
-  const { data, isLoading, isFetching, error } = useQuery("users", async () => {
-    const { data } = await api.get("users");
-
-    const users = data.users.map((user: User) => {
-      return {
-        id: user.id,
-        name: user.name,
-        email: user.email,
-        createdAt: new Date(user.createdAt).toLocaleDateString("pt-BR", {
-          day: "2-digit",
-          month: "long",
-          year: "numeric",
-        }),
-      };
-    });
-    return users;
-  });
+  const { data, isLoading, isFetching, error } = useUsers();
 
   const isWideVersion = useBreakpointValue({
     base: false,
