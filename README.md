@@ -87,7 +87,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - **[Axios](https://axios-http.com/)**
 - **[Yup](https://github.com/jquense/yup)**
 
-> Veja o arquivo [package.json](https://github.com/<user_do_github>/<nome_do_projeto>/package.json>)
+> Veja o arquivo [package.json](package.json)
 
 **Utilitários**
 
