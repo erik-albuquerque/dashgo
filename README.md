@@ -1,34 +1,174 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center" id="project_name">
+  <br />
+  <img src=".github/logo.png" alt="Logo">
+  <br />
+</h1>
 
-## Getting Started
+<p align="center">
+Dashboard moderno para gerenciamento de usuários.
+</p>
 
-First, run the development server:
+<p align="center">
+  <!-- GitHub last commit -->
+  <a href="https://github.com/erik-albuquerque/dashgo/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/erik-albuquerque/dashgo?color=%23D53F8C">
+  </a>
+  <!-- GitHub language count -->
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/erik-albuquerque/dashgo?color=%23D53F8C">
+  <!-- GitHub top language -->
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/erik-albuquerque/dashgo?color=%23D53F8C">
+  <!-- Repository version -->
+  <img alt="Repository version" src="https://img.shields.io/github/package-json/v/erik-albuquerque/dashgo?color=%23D53F8C">
+  <!-- Repository size -->
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/erik-albuquerque/dashgo?color=%23D53F8C">
+  <!-- Repository status -->
+  <img src="https://www.repostatus.org/badges/latest/unsupported.svg">
+  <!-- Contribution -->
+  <img src="https://img.shields.io/badge/contribution-welcome-%23D53F8C" alt="Contribution">
+  <!-- Link repo -->
+  <a href="https://github.com/erik-albuquerque/dashgo/blob/main/LICENSE.md">
+    <img src="https://img.shields.io/github/license/erik-albuquerque/dashgo?color=%23D53F8C" alt="License">
+  </a>
+</p>
+
+<p align="center">
+ <a href="#about">Sobre</a> •
+ <a href="#layout">Layout</a> • 
+ <a href="#technologies">Tecnologias</a> • 
+ <a href="#prerequisites">Pré-requisitos</a> •
+ <a href="#contributors">Contribuidores</a> • 
+ <a href="#author">Autor</a> • 
+ <a href="#license">Licença</a>
+</p>
+
+<p align="center">
+  <img src=".github/cover.png" alt="dashgo.">
+</p>
+
+<h4 align="center">
+  	🚧 dashgo. | Concluído 🚧
+</h4>
+
+<h2 id="about">
+💻 Sobre o projeto
+</h2>
+
+dashgo. é um dashboard fictício para gerenciamento de usuários com gráficos, construído para aplicar conhecimentos de [chakra-ui](https://chakra-ui.com/), [react hook form](https://react-hook-form.com/) e [react query](https://react-query.tanstack.com/) para cache de dados.
+Projeto desenvolvido durante o Ignite React da [Rocketseat](https://www.rocketseat.com.br/).
+
+<h2 id="layout">🎨 Layout</h2>
+
+### Mobile (Responsivo)
+<p align="center">
+  <img alt="Tela inicial do dashboard." src=".github/mobile/home.png" width="200px">
+
+  <img alt="Página que lista os usuários." src=".github/mobile/user_list.png" width="200px">
+</p>
+
+### Web
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img src=".github/web/home.png" width="400px" alt="Tela inicial do dashboard.">
+
+  <img src=".github/web/user_list.png" width="400px" alt="Página que lista os usuários.">
+</p>
+
+<br />
+<h2 id="technologies">🛠 Tecnologias</h2>
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- **[React](https://reactjs.org/)/[NextJs](https://nextjs.org/)**
+- **[TypeScript](https://www.typescriptlang.org/)**
+- **[Chakra UI](https://chakra-ui.com/)**
+- **[Apexcharts](https://apexcharts.com/)**
+- **[React Query](https://react-query.tanstack.com/)**
+- **[React Hook Form](https://react-hook-form.com/)**
+- **[MirageJs](https://miragejs.com/)**
+- **[Axios](https://axios-http.com/)**
+- **[Yup](https://github.com/jquense/yup)**
+
+> Veja o arquivo [package.json](https://github.com/<user_do_github>/<nome_do_projeto>/package.json>)
+
+**Utilitários**
+
+- API: feita com **[MirageJs](https://miragejs.com/)**
+- Gerador de dados fictícios: **[Faker](https://github.com/withshepherd/faker.js#readme)** by [@withshepherd](https://github.com/withshepherd)
+- Formatação de datas: **[Date-fns](https://date-fns.org/)**
+- Editor: **[Visual Studio Code](https://code.visualstudio.com/)**
+- Ícones: **[React Icons](https://react-icons.github.io/react-icons/)**
+- Fontes: **[Roboto](https://fonts.google.com/specimen/Roboto)**
+
+<h2 id="prerequisites">💿 Como executar o projeto</h2>
+
+### 🧰 Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+
+> [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) ou [Yarn](https://yarnpkg.com/) se for sua preferência.
+> Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+### 🧭 Rodando o projeto
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Clone este repositório
+$ git clone https://github.com/erik-albuquerque/dashgo.git
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd dashgo
+
+# Instale as dependências (npm ou yarn)
+$ yarn
+
+# Execute a aplicação em modo de desenvolvimento
+$ yarn dev
+
+# acesse http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<h2 id="contributors">📫 Como contribuir para o projeto</h2>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1.  Faça um **fork** do projeto.
+2.  Crie um branch: `git checkout -b <nome_branch>`.
+3.  Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`.
+4.  Envie para a branch original: `git push origin <nome_branch>`.
+5.  Crie a solicitação pull.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+> Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 👨‍💻 Contribuidores
 
-## Learn More
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
-To learn more about Next.js, take a look at the following resources:
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <!--<img style="border-radius: 50%;" src="" width="100px;" alt="user"/>--><br>
+        <sub>
+          <b></b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🙋‍♂️ Seja um dos contribuidores
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contribuir.
 
-## Deploy on Vercel
+<h2 id="author">🦸 Autor</h2>
+<a href="https://github.com/erik-albuquerque">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/79419167?v=4" width="100px;" alt="Érik Albuquerque"/>
+ <br />
+ <sub><b>Érik Albuquerque</b></sub></a>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/erik-albuquerque/)](https://www.linkedin.com/in/erik-albuquerque/)
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:erik.albuquerque.oficial@gmail.com)](mailto:erik.albuquerque.oficial@gmail.com)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<h2 id="license">📝 Licença</h2>
+
+Distribuído sob a licença MIT. Veja a [LICENSE](LICENSE.md) para mais informações.
+
+Feito com ❤️ por Érik Albuquerque 👋🏽 [Entre em contato!](https://www.linkedin.com/in/erik-albuquerque/)
+
+[⬆ Voltar ao topo](#project_name)<br />
