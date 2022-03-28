@@ -19,7 +19,7 @@ export function Profile({ showProfileData = true }: ProfileProps) {
       <Avatar
         size="md"
         name="Érik Albuquerque"
-        src="https://github.com/erikalbuquerque.png"
+        src="https://github.com/erik-albuquerque.png"
       />
     </Flex>
   );
